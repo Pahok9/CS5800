@@ -47,12 +47,15 @@ class Folder {
 
     public void print() {
         System.out.println("Folder: " + folderName);
-        System.out.println("File(s): ");
+        if (!file.isEmpty())
+            System.out.println("File(s): ");
         for (File f: file) {
-            System.out.println("+ " + f.getFileName());
+            System.out.println("- " + f.getFileName());
         }
-        System.out.println("SubFolders: ");
+        if (!subFolder.isEmpty())
+            System.out.println("SubFolders: ");
         for (Folder f: subFolder) {
+            System.out.print("+ ");
             f.print();
         }
     }
