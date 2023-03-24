@@ -1,7 +1,9 @@
+import java.util.List;
+
 public class PizzaBuilder {
     private String name;
     private String size;
-    private String toppings;
+    private List<String> toppings;
 
     public PizzaBuilder() {
     }
@@ -16,7 +18,7 @@ public class PizzaBuilder {
         return this;
     }
 
-    public PizzaBuilder setToppings(String toppings) {
+    public PizzaBuilder setToppings(List<String> toppings) {
         this.toppings = toppings;
         return this;
     }

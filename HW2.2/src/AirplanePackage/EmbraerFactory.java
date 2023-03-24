@@ -1,7 +1,15 @@
 package AirplanePackage;
 
 public class EmbraerFactory extends AirplaneFactory{
-    public EmbraerFactory() {
+    private static EmbraerFactory singletonInstance = null;
+
+    private EmbraerFactory() {
         super("Embraer");
+    }
+
+    public static EmbraerFactory getInstance() {
+        if (singletonInstance == null)
+            singletonInstance = new EmbraerFactory();
+        return singletonInstance;
     }
 }

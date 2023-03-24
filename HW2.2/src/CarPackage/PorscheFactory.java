@@ -1,9 +1,15 @@
 package CarPackage;
 
-import CarPackage.CarFactory;
-
 public class PorscheFactory extends CarFactory {
-    public PorscheFactory() {
+    private static PorscheFactory singletonInstance = null;
+
+    private PorscheFactory() {
         super("Porsche");
+    }
+
+    public static PorscheFactory getInstance() {
+        if (singletonInstance == null)
+            singletonInstance = new PorscheFactory();
+        return singletonInstance;
     }
 }

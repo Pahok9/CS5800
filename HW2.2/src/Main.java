@@ -11,25 +11,25 @@ import CarPackage.TeslaFactory;
 public class Main {
 
     public static void main(String[] args) {
-	    TeslaFactory teslaCar1 = new TeslaFactory();
+	    TeslaFactory teslaCar1 = TeslaFactory.getInstance();
         teslaCar1.build();
-        HondaFactory hondaCar = new HondaFactory();
+        HondaFactory hondaCar = HondaFactory.getInstance();
         hondaCar.build();
-        PorscheFactory porscheCar = new PorscheFactory();
+        PorscheFactory porscheCar = PorscheFactory.getInstance();
         porscheCar.build();
 
-        AirbusFactory airbusPlane = new AirbusFactory();
+        AirbusFactory airbusPlane = AirbusFactory.getInstance();
         airbusPlane.build();
-        BoeingFactory boeingPlane = new BoeingFactory();
+        BoeingFactory boeingPlane = BoeingFactory.getInstance();
         boeingPlane.build();
-        EmbraerFactory embraerPlane = new EmbraerFactory();
+        EmbraerFactory embraerPlane = EmbraerFactory.getInstance();
         embraerPlane.build();
 
-        SeaRayFactory seaRayBoat = new SeaRayFactory();
+        SeaRayFactory seaRayBoat = SeaRayFactory.getInstance();
         seaRayBoat.build();
-        MastercraftFactory mastercraftBoat = new MastercraftFactory();
+        MastercraftFactory mastercraftBoat = MastercraftFactory.getInstance();
         mastercraftBoat.build();
-        BertramFactory bertramBoat = new BertramFactory();
+        BertramFactory bertramBoat = BertramFactory.getInstance();
         bertramBoat.build();
     }
 }

@@ -1,9 +1,14 @@
 package CarPackage;
 
-import CarPackage.CarFactory;
-
 public class TeslaFactory extends CarFactory {
-    public TeslaFactory() {
+    private static TeslaFactory singletonInstance = null;
+
+    private TeslaFactory() {
         super("Tesla");
+    }
+    public static TeslaFactory getInstance() {
+        if (singletonInstance == null)
+            singletonInstance = new TeslaFactory();
+        return singletonInstance;
     }
 }
