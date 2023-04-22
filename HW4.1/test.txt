@@ -1,0 +1,16 @@
+H, Arial, 12, Red
+e, Abadi, 12, Green
+l, Calibri, 14, Blue
+l, Times New Roman, 14, Gray
+o, Times New Roman, 16, Black
+W, Arial, 16, Violet
+o, Calibri, 14, Orange
+r, Abadi, 14, Yellow
+l, Calibri, 12, Pink
+d, Arial, 12, Red
+C, Calibri, 14, Red
+S, Times New Roman, 14, Blue
+5, Abadi, 20, Blue
+8, Arial, 20, Blue
+0, Times New Roman, 22, Black
+0, Arial, 22, Red
